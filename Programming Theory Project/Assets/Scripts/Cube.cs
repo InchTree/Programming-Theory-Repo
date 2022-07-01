@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cube : Shape
+public class Cube : Shape// INHERITANCE
 {
     // Start is called before the first frame update
     protected override void Start()
     {
-        kindName = GetType().Name;
+        kindName = GetType().Name;// POLYMORPHISM
         base.Start();
     }
 }

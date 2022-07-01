@@ -7,8 +7,8 @@ public abstract class Shape : MonoBehaviour
 {
     [SerializeField] private Text displayText;
     
-    protected Color color { get; private set; }
-    protected string kindName { get; set; }
+    protected Color color { get; private set; }// ENCAPSULATION
+    protected string kindName { get; set; }// ENCAPSULATION
 
     protected virtual void Start()
     {
@@ -20,7 +20,7 @@ public abstract class Shape : MonoBehaviour
         DisplayText();
     }
 
-    private void DisplayText()
+    private void DisplayText()// ABSTRACTION
     {
         displayText.text = "Kind: " + kindName + "\nColorData: " + color;
     }
